@@ -1,0 +1,148 @@
+{
+  "event_name": "reopened_item",
+  "data": {
+    "item": {
+      "activating_occurrence_id": 320246513920,
+      "assigned_user_id": 350680,
+      "counter": 210,
+      "environment": "production",
+      "first_occurrence_id": 320246513920,
+      "first_occurrence_timestamp": 1680035105,
+      "framework": 1,
+      "group_item_id": null,
+      "group_status": 1,
+      "hash": "36bd1400c6f5ec089231a080b0202b7a36664488",
+      "id": 1386244335,
+      "integrations_data": {},
+      "last_activated_timestamp": 1680810491,
+      "last_modified_by": 350680,
+      "last_occurrence": {
+        "body": {
+          "trace": {
+            "exception": {
+              "class": "Encoding::UndefinedConversionError",
+              "message": "\"\\xC3\" from ASCII-8BIT to UTF-8"
+            },
+            "frames": [
+              {
+                "filename": "/usr/local/bundle/gems/puma-3.12.6/lib/puma/thread_pool.rb",
+                "lineno": 135,
+                "method": "block in spawn_thread"
+              },
+              {
+                "filename": "/usr/local/bundle/gems/puma-3.12.6/lib/puma/server.rb",
+                "lineno": 334,
+                "method": "block in run"
+              },
+              {
+                "filename": "/usr/local/bundle/gems/puma-3.12.6/lib/puma/server.rb",
+                "lineno": 476,
+                "method": "process_client"
+              },
+              {
+                "filename": "/usr/local/bundle/gems/puma-3.12.6/lib/puma/server.rb",
+                "lineno": 706,
+                "method": "handle_request"
+              },
+              {
+                "filename": "/usr/local/bundle/gems/puma-3.12.6/lib/puma/configuration.rb",
+                "lineno": 227,
+                "method": "call"
+              },
+              {
+                "filename": "/usr/local/bundle/gems/newrelic_rpm-7.1.0/lib/new_relic/agent/instrumentation/middleware_tracing.rb",
+                "lineno": 101,
+                "method": "call"
+              }
+            ]
+          }
+        },
+        "context": "controller#action",
+        "environment": "production",
+        "framework": "Rails: 5.2.6",
+        "language": "ruby",
+        "level": "error",
+        "metadata": {
+          "access_token": "a6ac6fff1xxxxxxxxxxxxxxxxxxxxxxx",
+          "api_server_hostname": "k8s",
+          "customer_timestamp": 1680632694,
+          "debug": {
+            "routes": {
+              "counters": {
+                "post_item": 1086940
+              },
+              "start_time": 1680541591993
+            }
+          },
+          "timestamp_ms": 1680632694383
+        },
+        "notifier": {
+          "configured_options": "not serialized when async_json_payload is not set",
+          "name": "rollbar-gem",
+          "version": "3.3.2"
+        },
+        "person": {},
+        "request": {
+          "GET": {},
+          "POST": {},
+          "body": "{\"submittedAt\":1680632688365}",
+          "cookies": {},
+          "headers": {
+            "Accept": "application/json, text/javascript, */*; q=0.01",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
+            "Connection": "upgrade",
+            "Content-Length": "1500",
+            "Content-Type": "application/json; charset=UTF-8",
+            "Host": "example.com",
+            "Origin": "https://example.com",
+            "Referer": "https://example.com/",
+            "Sec-Ch-Ua": "\"Not_A Brand\";v=\"99\", \"Microsoft Edge\";v=\"109\", \"Chromium\";v=\"109\"",
+            "Sec-Ch-Ua-Mobile": "?0",
+            "Sec-Ch-Ua-Platform": "\"Windows\"",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "cross-site",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78",
+            "Version": "HTTP/1.1",
+            "X-Forwarded-For": "192.11.190.66",
+            "X-Forwarded-Port": "443",
+            "X-Forwarded-Proto": "https",
+            "X-Request-Start": "1680632694.305"
+          },
+          "method": "POST",
+          "params": {
+            "action": "action",
+            "controller": "controller"
+          },
+          "request_id": "7c1b9e96-47b0-410f-b1b7-6e4428e4af01",
+          "session": {},
+          "url": "https://example.com/api/foo",
+          "user_ip": "192.11.190.66"
+        },
+        "server": {
+          "host": "39eb618811cd",
+          "pid": 11,
+          "root": "/opt/app"
+        },
+        "timestamp": 1680632694,
+        "uuid": "bd2cbadc-d1c3-43e6-a349-be29c1b331ec"
+      },
+      "last_occurrence_id": 321175387189,
+      "last_occurrence_timestamp": 1680632694,
+      "last_resolved_timestamp": 1680809864,
+      "level": 40,
+      "level_lock": 0,
+      "platform": 0,
+      "project_id": 604983,
+      "public_item_id": null,
+      "resolved_in_version": null,
+      "status": 1,
+      "title": "Encoding::UndefinedConversionError: \"\\xE2\" from ASCII-8BIT to UTF-8",
+      "title_lock": 0,
+      "total_occurrences": 12,
+      "unique_occurrences": 11
+    },
+    "url": "https://rollbar.com/team/project/items/210/"
+  }
+}

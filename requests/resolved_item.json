@@ -1,0 +1,109 @@
+{
+  "event_name": "resolved_item",
+  "data": {
+    "item": {
+      "activating_occurrence_id": 313997265418,
+      "assigned_user_id": null,
+      "counter": 145,
+      "environment": "dev",
+      "first_occurrence_id": 313997265418,
+      "first_occurrence_timestamp": 1676601022,
+      "framework": 1,
+      "group_item_id": null,
+      "group_status": 1,
+      "hash": "8ae66bf2bfe2ef9714956ad74819ff12d73830ff",
+      "id": 1372520357,
+      "integrations_data": {},
+      "last_activated_timestamp": 1680850602,
+      "last_modified_by": 350680,
+      "last_occurrence": {
+        "body": {
+          "trace": {
+            "exception": {
+              "class": "ActionController::UnknownHttpMethod",
+              "message": "PRI, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORKSPACE, UPDATE, LABEL, MERGE, BASELINE-CONTROL, MKACTIVITY, ORDERPATCH, ACL, SEARCH, MKCALENDAR, and PATCH"
+            },
+            "frames": [
+              {
+                "filename": "/usr/local/bundle/gems/puma-3.12.6/lib/puma/thread_pool.rb",
+                "lineno": 135,
+                "method": "block in spawn_thread"
+              },
+              {
+                "filename": "/usr/local/bundle/gems/puma-3.12.6/lib/puma/server.rb",
+                "lineno": 334,
+                "method": "block in run"
+              },
+              {
+                "filename": "/usr/local/bundle/gems/actionpack-5.2.6/lib/action_dispatch/http/request.rb",
+                "lineno": 426,
+                "method": "check_method"
+              }
+            ]
+          }
+        },
+        "environment": "dev",
+        "framework": "Rails: 5.2.6",
+        "language": "ruby",
+        "level": "error",
+        "metadata": {
+          "access_token": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "api_server_hostname": "k8s",
+          "customer_timestamp": 1679556582,
+          "debug": {
+            "routes": {
+              "counters": {
+                "post_item": 689505
+              },
+              "start_time": 1679509263137
+            }
+          },
+          "timestamp_ms": 1679556583195
+        },
+        "notifier": {
+          "configured_options": "not serialized when async_json_payload is not set",
+          "name": "rollbar-gem",
+          "version": "3.3.2"
+        },
+        "person": {},
+        "request": {
+          "GET": {},
+          "POST": {},
+          "body": "{}",
+          "cookies": {},
+          "headers": {
+            "Version": "HTTP/2.0"
+          },
+          "method": "PRI",
+          "params": {},
+          "request_id": "521f9ba6-8501-4124-897a-e0f3af4e050a",
+          "session": {},
+          "url": "http://localhost/*",
+          "user_ip": "10.0.0.2"
+        },
+        "server": {
+          "host": "265f6c8a9f96",
+          "pid": 1,
+          "root": "/opt/app"
+        },
+        "timestamp": 1679556583,
+        "uuid": "6d683260-74fb-49dd-a6bb-742a44e72cf5"
+      },
+      "last_occurrence_id": 319053950023,
+      "last_occurrence_timestamp": 1679556583,
+      "last_resolved_timestamp": 1680850612,
+      "level": 40,
+      "level_lock": 0,
+      "platform": 0,
+      "project_id": 604983,
+      "public_item_id": null,
+      "resolved_in_version": null,
+      "status": 2,
+      "title": "ActionController::UnknownHttpMethod: PRI, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORS",
+      "title_lock": 0,
+      "total_occurrences": 16,
+      "unique_occurrences": 4
+    },
+    "url": "https://rollbar.com/team/project/items/145/"
+  }
+}
