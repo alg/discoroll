@@ -11,7 +11,8 @@ Content-Type: application/json
 < ./exp_repeat_item.json
 
 ### POST https://discoroll.fly.dev/1093505773230903387/oW-p1l1VSUNR1JxpxGIZxMClsSrsiC4e7fZ-0-zA91MNBeWnqGE1zySbP6mWvp9DTXW-
-POST http://localhost:8080/1093505773230903387/oW-p1l1VSUNR1JxpxGIZxMClsSrsiC4e7fZ-0-zA91MNBeWnqGE1zySbP6mWvp9DTXW-
+### POST http://localhost:8080/1093505773230903387/oW-p1l1VSUNR1JxpxGIZxMClsSrsiC4e7fZ-0-zA91MNBeWnqGE1zySbP6mWvp9DTXW-
+POST https://discoroll.fly.dev/1096008297833836626/LeWvYr_fFTsVO67OJM5NHZxkW6qvb38LBbuPJCkMsilphL5Ysp9S-nn6WBFbmSdNaSH5
 Content-Type: application/json
 
 < ./new_item.json
